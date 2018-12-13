@@ -10,7 +10,12 @@ A guide to make key configurations on ckan while installing from source
   * Note: The port would change depending upon the version of solr you want to use. All the ports are defined in solr docker file
 
 ## Activate Virtual Env
-`. /usr/lib/ckan/default/bin/activate`
+* `. /usr/lib/ckan/default/bin/activate`
+
+## Create new sysadmin
+Setting up sysadmin based on https://docs.ckan.org/en/2.6/maintaining/getting-started.html#create-admin-user
+* `paster sysadmin add ckan_admin -c /etc/ckan/default/development.ini`
+* Enter password: `test1234`
 
 ## Run CKAN
 `paster serve /etc/ckan/default/development.ini`
