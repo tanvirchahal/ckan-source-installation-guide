@@ -3,6 +3,7 @@ A guide to make key configurations on ckan while installing from source
 
 ## Basic Setup
 * Setup CKAN Locally using https://docs.ckan.org/en/2.8/maintaining/installing/install-from-source.html
+  * Update `psycopg==2.7.3.2` in `requirements.txt` to avoid error
   * Skip the Solr Installation Setup from source
 * Setup Solr from https://github.com/tanvirchahal/docker-ckan-solr
 * Run: `docker-compose -f docker-compose.yml up`
